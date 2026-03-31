@@ -1,0 +1,17 @@
+header{
+    background-color: rgb(255, 246, 127);
+}
+
+#navega{
+    display: flex;
+    justify-content: space-around;
+}
+
+section{
+    margin-bottom: 100px;
+}
+
+#wop div{
+    display: flex;
+    justify-content: space-around;
+}
