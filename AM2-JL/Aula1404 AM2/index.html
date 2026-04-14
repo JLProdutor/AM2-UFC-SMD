@@ -1,0 +1,76 @@
+<!-- Aula AM2 14/04/2026 - REGEX 
+Testar em: regex101.com 
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <form action="">
+        <h1>Validações</h1>
+
+        <!-- Validação de Telefone -->
+        <span>Telefone: </span>
+        <input type="tel" name="tel" id="tel" pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[0-9])[0-9]{3}\-?[0-9]{4}$" title="Formato esperado: (XXX)XXXXX-XXXX" required>
+        <br /><br />
+
+        <!-- Validação de CEP -->
+        <span>CEP: </span>
+        <input type="text" name="cep" id="cep" pattern="^\d{5}-\d{3}$" title="Formato esperado: XXXXX-XXX" required>
+        <br /><br />
+
+        <!-- Validação de Email -->
+        <span>Email: </span>
+        <input type="email" name="email" id="email" pattern="^[a-z0-9._%+-]+@[a-z0-9-]+\.[a-z]{2,}$"
+            title="Formato esperado: usuario@dominio.com" required>
+        <script src="script.js" async defer></script>
+        <br /><br />
+
+        <!-- Nome -->
+        <span>Nome: </span>
+        <input type="text" name="nome" id="nome" pattern="^\[A_Z][a-zA-Z]{4,11}$"
+            title="Deve haver entre 5-12 caracteres, começando com letra maiúscula, sem caracteres especiais" required>
+        <br /><br />
+
+        <!-- Senha -->
+        <span>Senha: </span>
+        <input type="password" name="senha" id="senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*@#$%^&amp;+=!).{10,}$"
+            title="Deve haver pelo menos 10 caracteres, uma letra maiúscula, uma letra minúscula, um número, e um caractere especial" required>
+        <br /><br />
+
+        <input type="submit" value="Confirmar">
+        <hr>
+
+        <!-- Teste Resultado (Extra) -->
+        <p>Resultado: <span id="resultado"></span></p>
+        <br />
+        <button onclick="obterValor()">Obter Valor</button>
+        <hr>
+        <br />
+    </form>
+    <hr>
+    
+    <form action="/action_page.php">
+        <!-- Datalist -->
+         <span>Browser</span>
+         <input list="browser" name="browser">
+         <datalist id="browsers">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+         </datalist>
+         <input type="submit" value="">
+    </form>
+</body>
+
+</html>
