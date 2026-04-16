@@ -1,0 +1,24 @@
+input[type=range],
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    cursor: pointer;
+}
+
+/* Exercício: Seletores CSS */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#destaque{
+    color: red;
+    font-weight: bold;
+}
+
+.info{
+    background-color: yellow;
+    font-size: 16px;
+}
+
+#ex3 h1, h2{
+    color: #333;
+}

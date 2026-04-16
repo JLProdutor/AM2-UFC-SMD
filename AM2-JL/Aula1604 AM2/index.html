@@ -1,0 +1,67 @@
+<!-- Aula 16/04 - Autoração Multimídia II -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Aula 16/04 - Autoração Multimídia II</h1>
+    <h2>Manipulação e Tipos de Output / Introdução ao CSS</h2>
+    <br />
+    <hr>
+    <!-- Modificar valor internamente -->
+    <h3>Exercícios 1 e 2</h3>
+    <form action=""
+        oninput="saidaSlider.value = slider.value; soma.value = parseInt(slider.value) + parseInt(numeroSoma.value)">
+        <label for="slider">Selecione um valor:</label>
+        <input type="range" name="slider" id="slider" min="0" max="100" value="0"> <!-- Input Slider -->
+        <output name="saidaSlider" id="saidaSlider"></output>
+        <br />
+        <label for="number">Digite um número</label>
+        <input type="number" name="numeroSoma" id="numeroSoma" value="0"> <!-- Input Number -->
+        <br />
+        <label for="soma">A soma é:</label>
+        <output name="soma" id="soma" for="slider numeroSoma"></output> <!-- Output "Modificado" -->
+    </form>
+    <br />
+    <hr>
+
+    <h3>Exercício 3</h3>
+    <form action="" oninput="prog.value = progMod.value; progRes.value = progMod.value; medidor.value = progMod.value">
+        <label for="progMod">Slider</label>
+        <input type="range" name="progMod" id="progMod" min="0" max="100" value="0">
+        <br />
+        <label for="prog">Progresso:</label>
+        <progress name="prog" id="prog" max="100" value="0"></progress> <!-- Barra de Progresso -->
+        <meter name="medidor" id="medidor" min="0" max="100" low="30" high="80" optimum="100" value="0"></meter>
+        <!-- Barra de Medição (muda conforme %) -->
+        <br />
+        <label for="progRes">Valor Atual:</label>
+        <output name="progRes" id="progRes" for="progMod prog"></output>
+        <br>
+    </form>
+    <br />
+    <hr>
+
+    <div id="ex3">
+        <h3>Exercício 4: Seletores CSS</h3>
+        <p id="destaque">Eu sou o Destaque!!!</p>
+        <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus atque maxime quibusdam
+            aspernatur excepturi eum perferendis at aperiam magni id repudiandae veniam iure et, obcaecati, nesciunt,
+            culpa consectetur reprehenderit repellendus?</p>
+        <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, doloribus. Enim placeat,
+            animi quam voluptas alias fugit! Libero officia accusantium illo officiis vero quidem error. Dolor sed
+            asperiores tenetur voluptatibus.</p>
+    </div>
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
