@@ -1,0 +1,48 @@
+/* Acrônimo para memorizar a ordem: LoVe/HAte */
+a:link{
+    color: #FF0000;
+}
+
+a:visited{
+    color: #00FF00;
+}
+
+a:hover{
+    color: #FF00FF;
+    cursor: pointer;
+}
+
+a:focus{
+    outline: 1px dotted;
+}
+
+a:active{
+    color: #0000FF;
+}
+
+
+q::before{
+    content: '"';
+}
+
+q::after{
+    content: '"';
+}
+
+/* Estilizar a primeira linha de u bloco de texto */
+p::first-line{
+    color: rgb(72, 6, 158);
+    font-variant: small-caps;
+}
+
+/* Estiliza a primeira letra de um bloco de texto */
+p::first-letter{
+    color: #00830b;
+    font-size: 32;
+}
+
+/* Estiliza a seleção (textos) */
+::selection{
+    color: white;
+    background-color: orangered;
+}
