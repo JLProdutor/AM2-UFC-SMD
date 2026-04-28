@@ -1,0 +1,53 @@
+/* Modelo CSS Box 
+Ordem: Margin > Border > Padding > Content
+*/
+
+.divPattern{
+    width: 200px; /* Largura */
+    height: 100px; /* Altura */
+    margin: 20px; /* Espaço entre conteúdo e borda */
+    padding: 20px; /* Espaço externo à borda */
+    border: 5px solid black; /* Borda (Tamanho, modelo, cor) */
+    text-align: center;
+    line-height: 100px;
+}
+
+#content-box{
+    box-sizing: content-box; /* Define o tamanho da área de conteúdo do elemento (width + height) */
+    background-color: lightblue;
+}
+
+#border-box{
+    box-sizing: border-box; /* Define o tamanho total do elemento (width + height + padding + border) */
+    background-color: lightcoral;
+}
+
+/* O padding funciona em sentido horário */
+#testPadding{
+    padding-top: 50px; /* Padding de cima */
+    padding-right: 30px; /* Padding da direita */
+    padding-bottom: 50px; /* Padding de baixo */
+    padding-left: 80px; /* Padding da esquerda */
+    background-color: lightsalmon;
+}
+
+/* O border funciona em sentido horário */
+#testBorder{
+    border-top: 50px; /* Border de cima */
+    border-right: 30px; /* Border da direita */
+    border-bottom: 50px; /* Border de baixo */
+    border-left: 80px; /* Border da esquerda */
+    border-style: ridge; /* Estilo da borda*/
+    border-color: black; /* Cor da borda */
+    border-radius: 5%; /* Arredondamento da borda */
+    background-color: lightgreen;
+}
+
+/* A margin funciona em sentido horário */
+#testMargin{
+    margin-top: 80px; /* Margin de cima */
+    margin-right: 30px; /* Margin da direita */
+    margin-bottom: 50px; /* Margin de baixo */
+    margin-left: 50px; /* Margin da esquerda */
+    background-color: lightgoldenrodyellow;
+}
