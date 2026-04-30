@@ -1,0 +1,79 @@
+table, th, td {
+    border: 1px solid lightcoral;
+    border-collapse: collapse;
+}
+
+table {
+    width: 60%;
+    justify-self: center;
+}
+
+th {
+    height: 70px;
+    font-size: 2rem;
+}
+
+td{
+    text-align: left;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+div{
+    border: 1px solid black;
+}
+
+.container{
+    position: relative;
+    border: none;
+}
+
+.statico{
+    position: static; /* Valores padrões (posição original) */
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.relativo{
+    position: relative; /* Valores relativos a posição original */
+    justify-self: center;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    top: 50px;
+    left: 30px;
+    background-color: deepskyblue;
+}
+
+.absoluto{
+    position: absolute; /* Valor relativo ao ancestral mais próximo (acima) quebrando o fluxo normal */
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    left: 200px;
+    top: 50px;
+}
+
+.fixo{
+    position: fixed; /* Valores relativos à janela de visualização */
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: cornflowerblue;
+    top: 0;
+    left: 1700px;
+}
+
+.gruda{
+    position: sticky; /* Valor é relativo e ao atingir um limite se trona fixo */
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: hotpink;
+    bottom: 20px;
+    left: 1700px;
+}
