@@ -1,0 +1,53 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul li a {
+    background-color: red;
+    padding: 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+nav ul li a:hover{
+    background-color: darkred;
+    color: white;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+p {
+    display: none;
+}
+
+#pics {
+    justify-self: center;
+}
+
+#pics img{
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
