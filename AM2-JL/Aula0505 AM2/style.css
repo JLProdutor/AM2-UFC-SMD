@@ -1,0 +1,46 @@
+ul, ol{
+    list-style-type: none;
+    padding: 0;
+}
+
+.bloqueado{
+    display: block; /* Ocupa toda a largura disponível, independente do conteúdo, e começam em uma nova linha */
+    background-color: lightblue;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.naLinha{
+    display: inline; /* Ocupam apenas o espaço necessário para o conteúdo e aparecem na memsa linha (Propriedades verticais não funcionam) */
+    background-color: lightskyblue;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#containerInBlock{
+    text-align: center;
+}
+
+.naLinhaBloqueado{
+    display: inline-block; /* Na mesma linha, mas permitem edição de altura e largura */
+    background-color: lightsteelblue;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: top;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.nadinha{
+    display: none; /* Remove o elemento completamente como se não existisse */
+    background-color: lightcoral;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
