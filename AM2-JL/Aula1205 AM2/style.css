@@ -1,0 +1,39 @@
+/* 
+flex-grow: Capacidade de um item crescer em relação aos outros
+flex-shrink: Capacidade de um item diminuir em relação aos outros
+flex-basis: Tamanho base/inicial
+*/
+
+.container{
+    display: flex;
+    border: 2px solid black;
+    width: 600px;
+}
+
+.item{
+    flex: 0 1 auto;
+    padding: 20px;
+}
+
+.cLinks ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: lightblue;
+    list-style: none;
+}
+
+.cLinks ul li{
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+    transition: flex;
+    transition-duration: 0.2s;
+    flex-grow: 1;
+}
+
+.cLinks ul li:hover{
+    cursor: pointer;
+    border-bottom: solid 3px dodgerblue;
+    flex-grow: 3;
+}
