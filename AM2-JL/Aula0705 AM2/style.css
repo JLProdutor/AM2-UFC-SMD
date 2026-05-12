@@ -25,6 +25,8 @@ flex-wrap: Especifica se os itens devem ser quebrados em várias linhas ou perma
 -> nowrap:
 -> wrap:
 -> wrap-reverse:
+
+flex-flow: flex-direction e flex-wrap em uma única linha
 */
 
 /* Exemplo 1 */
