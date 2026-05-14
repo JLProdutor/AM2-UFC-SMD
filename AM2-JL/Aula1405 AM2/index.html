@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AM2 14/05</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>Exercício: dl, details, summary, dt e dd</h3>
+    <dl>
+        <details>
+            <summary>O que é "Opa!"</summary>
+            <dt>Definição</dt>
+            <dd>Uma saudação simples e descontraída</dd>
+            <dt>Quando Usar</dt>
+            <dd>Normalmente, ao encontrar alguém</dd>
+        </details>
+        <details>
+            <summary>O que é "Olá!"</summary>
+            <dt>Definição</dt>
+            <dd>Uma saudação simples, porém formal</dd>
+            <dt>Quando usar</dt>
+            <dd>Ao cumprimentar pessoas desconhecidas, ou em ambientes formais</dd>
+        </details>
+    </dl>
+    <hr>
+
+    <h3>Exercício: table, rowspan, colspan, zebramento, hover</h3>
+    <table class="planos">
+        <thead>
+            <tr>
+                <th rowspan="2">Plano</th>
+                <th colspan="2">Valores</th>
+            </tr>
+            <tr>
+                <th>Mensal</th>
+                <th>Anual</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Basic</td>
+                <td>29</td>
+                <td>290</td>
+            </tr>
+            <tr>
+                <td>Pro</td>
+                <td>59</td>
+                <td>590</td>
+            </tr>
+            <tr>
+                <td>Max</td>
+                <td>99</td>
+                <td>990</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <h3>Exercício: flexbox e flex-grow</h3>
+    <ul class="menu">
+        <li>Home</li>
+        <li>Serviços</li>
+        <li>Planos</li>
+        <li>FAQ</li>
+        <li>Contato</li>
+    </ul>
+    <hr>
+
+    <h3>Exercício: flex-wrap e icons</h3>
+    <section class="cards">
+        <div class="card">
+            <span class="icon material-symbols-outlined">rocket_launch</span>
+            <h4>Velocidade</h4>
+            <p>Entrega Rápida</p>
+        </div>
+        <div class="card">
+            <span class="icon material-symbols-outlined">rocket_launch</span>
+            <h4>Velocidade</h4>
+            <p>Entrega Rápida</p>
+        </div>
+        <div class="card">
+            <span class="icon material-symbols-outlined">rocket_launch</span>
+            <h4>Velocidade</h4>
+            <p>Entrega Rápida</p>
+        </div>
+        <div class="card">
+            <span class="icon material-symbols-outlined">rocket_launch</span>
+            <h4>Velocidade</h4>
+            <p>Entrega Rápida</p>
+        </div>
+    </section>
+    <hr>
+
+    <h3>Exercício: form</h3>
+    <form oninput="resultado.value = nome.value + ' ' + sobremone.value">
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="text" id="sobrenome" placeholder="Sobrenome">
+        <output name="resultado"></output>
+    </form>
+    <hr>
+
+</body>
+</htmll>
