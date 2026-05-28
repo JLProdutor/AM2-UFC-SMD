@@ -1,4 +1,4 @@
-<!-- AUtoração Multimídia II (26/05/2026) - Métodos e Propriedades DOM -->
+<!-- AUtoração Multimídia II (26/05/2026 e 28/05/2026) - Métodos e Propriedades DOM -->
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -36,54 +36,36 @@
          <img id="foto" src="antiga.jpg" alt="Foto" height="100px" width="100px"><br>
          <a id="link" href="#">Ir</a><br><br>
          <input id="nome" value="">
-         <button id="enviar">Enviar</button>
+         <button id="enviar">Enviar</button><hr>
 
-        <script>
-            // Pt. 1
-            document.getElementById("demo").innerHTML = "Aula 26/05/2026";
+         <!-- Pt. 7 -->
+        <p id="stiloso">Parágrafo Estilizado por JS!!!</p><hr>
 
-            // Pt. 2
-            const h = document.getElementById("titulo");
-            const p =document.getElementById("info");
-            h.innerText = "DOM Interativo";
-            p.style.color = "royalblue";
-            p.innerText = "Texto trocado pelo JS!";
+        <!-- Pt. 8 -->
+         <button id="toogle">Mostrar</button>
+         <div id="painel">...</div><hr>
 
-            // Pt. 3
-            function destacar(){
-                const ps = document.getElementsByTagName("p");
-                for(let i = 0; i < ps.length; i++){
-                    ps[i].style.background = "royalblue";
-                    ps[i].style.color = "white";
-                }
-            }
+        <!-- Pt. 9: Sendo criada pelo JS -->
+         <div id="pt9"></div>
+        
+        <!-- Pt. 10 -->
+         <ul id="listinha">
+            <li>Preencha o campo para criar itens como eu!!!</li>
+         </ul>
+         <input id="campo">
+         <button onclick="adicionar()">Adicionar</button><hr>
 
-            // Pt.4
-            const avisos = document.getElementsByClassName("aviso");
-            console.log("Total:", avisos.length);
-            for(let i = 0; i < avisos.length; i++){
-                avisos[i].style.color = "crimson";
-                avisos[i].innerText = "⚠️ " + avisos[i].innerText;
-            }
+         <!-- Pt. 11 -->
+          <ul id="frutas">
+            <li>Melão</li>
+            <li id="para-remover">Melancia</li>
+            <li>Abacaxi</li>
+          </ul>
+          <button id="remover">Remover TODOS!</button><hr>
 
-            // Pt. 5
-            const box = document.getElementById("box");
-            document.getElementById("btn").onclick = () => {
-                box.innerHTML = `
-                <h3></h3>
-                <ul>
-                    <li><b>1.</b> Estudar DOM</li>
-                    <li><b>2.</b> Praticar JS</li>
-                </ul>
-                `;
-            };
+        <!-- Pt. 11 -->
+        <div id="carrega"><p id="placeholder">Carregando...</p></div>
 
-            // Pt. 6
-            document.getElementById("foto").src = "https://avatars.githubusercontent.com/u/102752985?v=4";
-            document.getElementById("foto").alt = "Nova foto";
-            document.getElementById("link").href = "https://github.com/JLProdutor";
-            document.getElementById("nome").value = "João Lucas";
-            document.getElementById("enviar").disabled = true;
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
