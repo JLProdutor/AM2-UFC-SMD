@@ -5,7 +5,7 @@ click: Ao clicar com o mouse
 mouseover: Ao passar o mouse em algo
 mouseout: Ao retirar o mouse de algo
 mousemove: Ao mover o mouse
-*/ 
+*/
 
 /* Eventos de Teclado
 keydown: Ao pressionar uma tecla
@@ -38,39 +38,57 @@ elemento.addEventListener("tipoDeEvento", função);
 
 // Pt. 1
 const pClick = document.getElementById("pClick");
-pClick.addEventListener("click", function(){
+pClick.addEventListener("click", function () {
     pClick.innerText = "Parágrafo clicado!"
 });
 
 // Pt. 2
 const bClick = document.getElementById("bClick");
-bClick.addEventListener("click", function(){
+bClick.addEventListener("click", function () {
     console.log("BOTÃO CLICADO!");
 });
 const dMOver = document.getElementById("dMOver");
-dMOver.addEventListener("mouseover", function(){
+dMOver.addEventListener("mouseover", function () {
     console.log("PASSOU O MOUSE SOBRE A A DIV!");
 });
 const iTeclado = document.getElementById("iTeclado");
-iTeclado.addEventListener("keydown", function(event){
+iTeclado.addEventListener("keydown", function (event) {
     console.log("TECLA PRESSIONADA:", event.key);
 });
 const iTeclado2 = document.getElementById("iTeclado2");
-iTeclado2.addEventListener("keyup", function(event){
+iTeclado2.addEventListener("keyup", function (event) {
     console.log("TECLA LIBERADA:", event.key);
 });
 const fSubmit = document.getElementById("fSubmit");
-fSubmit.addEventListener("submit", function(event){
+fSubmit.addEventListener("submit", function (event) {
     event.preventDefault();
     console.log("FORM ENVIADO");
 });
-window.addEventListener("resize", function(){
+window.addEventListener("resize", function () {
     console.log("JANELA REDIMENSIONADA");
 });
 
 // Pt. 3
 const iTeclado3 = document.getElementById("iTeclado3");
 const num = 0;
-iTeclado3.addEventListener("keypress", function(){
+iTeclado3.addEventListener("keypress", function () {
     console.log("Quantas vezes você apertou?:", iTeclado3.value.length);
 });
+
+// Pt. 4
+function add() {
+    const campoAlgo = document.getElementById("campoAlgo");
+    const listaAdd = document.getElementById("listaAdd");
+    const li = document.createElement("li");
+    const cont = campoAlgo.value.trim();
+    if (cont !== '') {
+        li.innerText = cont;
+        li.addEventListener("click", function () {
+            li.remove();
+        });
+    }
+    listaAdd.appendChild(li);
+    campoAlgo.value = "";
+}
+
+

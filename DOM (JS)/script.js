@@ -104,7 +104,7 @@ remover.onclick = function (){
     itens.forEach(item => item.remove());
 };
 
-// Pt. 11
+// Pt. 12
 const carrega = document.getElementById("carrega");
 const placeholder = document.getElementById("placeholder");
 const h2 = document.createElement("h2");
